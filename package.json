@@ -27,11 +27,16 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@nextui-org/react": "^1.0.0-beta.12",
+    "@types/react-icons": "^3.0.0",
     "next": "^13.3.0",
     "next-seo": "^5.15.0",
     "next-sitemap": "^4.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "tw-elements": "^1.0.0-beta2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",

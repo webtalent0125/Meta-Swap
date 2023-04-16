@@ -59,8 +59,8 @@ Build your SaaS product faster with [React SaaS Boilerplate](https://nextlessjs.
 
 ### Premium Themes
 
-| [Green Nextjs Landing Page Template](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [Purple Saas Nextjs Theme](https://creativedesignsguru.com/landing-purple-modern-react-theme/) |
-| --- | --- |
+| [Green Nextjs Landing Page Template](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/)                                                                                                   | [Purple Saas Nextjs Theme](https://creativedesignsguru.com/landing-purple-modern-react-theme/)                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![Green Nextjs Landing Page Template](https://creativedesignsguru.com/assets/images/themes/landing-green-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [![Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-blue-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
 
 Find more [Nextjs Themes](https://creativedesignsguru.com/category/nextjs/).
@@ -186,5 +186,28 @@ See [LICENSE](LICENSE) for more information.
 Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
 
 [![React SaaS Boilerplate](https://creativedesignsguru.com/assets/images/themes/next-js-saas-starter-kit.jpg)](https://nextlessjs.com)
-# abenaLanding
+
+###description
+Hi Austin,
+
+Great! I have attached the task description below, please feel free to keep me updated with progress and how the task progresses:
+
+===
+
+In this programming task, you will be implementing a single component based on the design specification file from Figma provided in the link below:
+
+https://www.figma.com/file/XjQMqZr6UPrw4vTPe9BEIu/Trading-Component?node-id=0-1&t=6whMnXltu32Km3aD-0
+
+The component should be implemented in a suitable front-end library with entry and exit fields. In addition, you should add functionality to connect a Metamask wallet and have the fields query balances of tokens.
+
+For the bonus task, you should integrate the 1Inch API to calculate swap amounts based on input and output amounts. Finally, as an extra bonus, you should implement the swap functionality when the button is clicked.
+
+The aim of this task is to test your proficiency in front-end development, specifically in implementing a component based on a design specification, integrating with external APIs, and managing state effectively. We will be paying close attention to detail and how closely the component matches the design, so please ensure that you implement the component with high attention to detail.
+
+We encourage you to approach the task creatively and demonstrate your technical skills to the best of your ability. The task should take no more than 3 hours to complete.
+
+Please let us know if you are still willing to complete this task, and we will provide you with any necessary details.
+
+Good luck!
+
 # Meta-Swap

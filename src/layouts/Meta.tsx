@@ -19,7 +19,6 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
-        <h1>this is header</h1>
       </Head>
       <NextSeo
         title={props.title}
