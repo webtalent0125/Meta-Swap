@@ -49,3 +49,6 @@ local
 
 # vercel
 .vercel
+
+# Local Netlify folder
+.netlify
