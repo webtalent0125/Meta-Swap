@@ -46,7 +46,6 @@ const networks: Network[] = [
 
 const Header = () => {
   const [selected, setSelected] = React.useState<string>();
-  const [currentNetwork, setCurrentNetwork] = React.useState<Network>();
   const [currentAddress, setCurrentAddress] = React.useState<string>();
   const {
     isConnected,
@@ -54,6 +53,8 @@ const Header = () => {
     setIsConnected,
     currentAccount,
     balance,
+    setCurrentNetwork,
+    currentNetwork,
   } = useContext<any>(TransactionContext);
 
   const getCurrentChain = async () => {
@@ -116,7 +117,7 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-14px">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-[14px]">
         <div className="flex items-center">
           <Image className="h-[70px] w-[70px]" src={logo} alt="1linch Logo" />
         </div>

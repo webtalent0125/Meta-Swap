@@ -24,12 +24,6 @@ module.exports = {
       full: '50%',
       large: '12px',
     },
-    padding: {
-      '30px': '30px',
-      '24px': '24px',
-      '18px': '18px',
-      '14px': '14px',
-    },
   },
   extend: {
     colors: {

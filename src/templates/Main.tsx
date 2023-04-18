@@ -37,11 +37,11 @@ const Main = (props: IMainProps) => {
       <main className="container text-title">
         <Header />
         {msg !== '' && (
-          <div className="mx-auto px-30px">
+          <div className="mx-auto px-[30px]">
             <Alert msg={msg} />
           </div>
         )}
-        <div className="container flex h-screen items-center justify-center p-14px">
+        <div className="container flex items-center justify-center p-[14px]">
           {props.children}
         </div>
       </main>

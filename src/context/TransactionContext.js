@@ -8,6 +8,7 @@ export const TransactionProvider = ({ children }) => {
   const [isConnected, setIsConnected] = useState();
   const [balance, setBalance] = useState(0);
   const [provider, setProvider] = useState(null);
+  const [currentNetwork, setCurrentNetwork] = useState();
 
   const getBalance = async () => {
     if (isConnected === 'connected') {
@@ -85,6 +86,8 @@ export const TransactionProvider = ({ children }) => {
         setIsConnected,
         balance,
         setBalance,
+        setCurrentNetwork,
+        currentNetwork,
       }}
     >
       {children}
