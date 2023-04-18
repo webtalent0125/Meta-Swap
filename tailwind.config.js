@@ -2,12 +2,13 @@
 module.exports = {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/tw-elements/dist/js/**/*.js',
+    './node_modules/flowbite-react/**/*.js',
+    './public/**/*.html',
   ],
   theme: {
     colors: {
       primary: '#1E1E1E',
-      bgbutton: '#E5E54B',
+      bgbutton: '#c1c116',
       bgsection: '#101010',
       bginnersection: '#141822',
       percentborder: '#1D2A43',
@@ -36,8 +37,5 @@ module.exports = {
         100: '#ffffff',
       },
     },
-  },
-  Plugin: {
-    'postcss-import': {},
   },
 };
