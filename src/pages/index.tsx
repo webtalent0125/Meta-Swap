@@ -29,7 +29,7 @@ const Index = () => {
   const [buyToken, setbuyToken] = React.useState<Item>();
   const [sellTokenNum, setSellTokenNum] = React.useState<number>();
   const [buyTokenNum, setBuyTokenNum] = React.useState<number>();
-  const [sellAmount, setSellAmount] = React.useState<number>(1);
+  const [sellAmount, setSellAmount] = React.useState<number>(0);
   const [buyAmount, setBuyAmount] = React.useState<number>(0);
   const { currentAccount } = React.useContext<any>(TransactionContext);
 
