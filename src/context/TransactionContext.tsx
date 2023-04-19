@@ -1,12 +1,47 @@
-import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
+import type { ReactNode } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
-export const TransactionContext = React.createContext();
+interface TransactionContextProps {
+  checkIfWalletIsConnected: () => Promise<any>;
+  connectWallet: () => Promise<any>;
+  currentAccount: string | undefined;
+  isConnected: string | undefined;
+  setIsConnected: React.Dispatch<string>;
+  balance: string;
+  setBalance: React.Dispatch<string>;
+  setCurrentNetwork: React.Dispatch<any>;
+  currentNetwork: string | undefined;
+}
 
-export const TransactionProvider = ({ children }) => {
+type Props = {
+  children: ReactNode;
+};
+
+const TransactionContextDefaultValue: TransactionContextProps = {
+  checkIfWalletIsConnected: async () => {},
+  connectWallet: async () => {},
+  currentAccount: '',
+  isConnected: '',
+  setIsConnected: () => {},
+  balance: '0',
+  setBalance: () => {},
+  setCurrentNetwork: () => {},
+  currentNetwork: '',
+};
+
+const TransactionContext = createContext<TransactionContextProps>(
+  TransactionContextDefaultValue
+);
+
+export function useTransactionContext() {
+  return useContext(TransactionContext);
+}
+
+export const TransactionProvider = ({ children }: Props) => {
   const [currentAccount, setCurrentAccount] = useState();
-  const [isConnected, setIsConnected] = useState();
-  const [balance, setBalance] = useState(0);
+  const [isConnected, setIsConnected] = useState<string>();
+  const [balance, setBalance] = useState('0');
   const [provider, setProvider] = useState(null);
   const [currentNetwork, setCurrentNetwork] = useState();
 

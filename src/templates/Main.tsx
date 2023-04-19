@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-import { TransactionContext } from '../context/TransactionContext';
+import { useTransactionContext } from '../context/TransactionContext';
 import { Alert } from './Alert';
 import { Header } from './Header';
 
@@ -11,8 +11,7 @@ type IMainProps = {
 };
 
 const Main = (props: IMainProps) => {
-  const { isConnected, checkIfWalletIsConnected } =
-    useContext<any>(TransactionContext);
+  const { isConnected, checkIfWalletIsConnected } = useTransactionContext();
   const [msg, setMsg] = React.useState('');
 
   useEffect(() => {

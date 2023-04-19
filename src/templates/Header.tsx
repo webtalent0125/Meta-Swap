@@ -1,14 +1,14 @@
 import { Dropdown } from '@nextui-org/react';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 import logo from '../../public/assets/images/logo.png';
 import eth from '../../public/assets/images/networks/1.png';
 import bnb from '../../public/assets/images/networks/2.png';
 import pol from '../../public/assets/images/networks/3.png';
 import aur from '../../public/assets/images/networks/4.png';
-import { TransactionContext } from '../context/TransactionContext';
+import { useTransactionContext } from '../context/TransactionContext';
 
 declare global {
   interface Window {
@@ -55,7 +55,7 @@ const Header = () => {
     balance,
     setCurrentNetwork,
     currentNetwork,
-  } = useContext<any>(TransactionContext);
+  } = useTransactionContext();
 
   const getCurrentChain = async () => {
     const hex = Number(window.ethereum.networkVersion).toString(16);

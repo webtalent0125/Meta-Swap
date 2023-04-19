@@ -47,6 +47,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".storybook/*.ts",
-    "src/context/TransactionContext.js"
+    "src/context/TransactionContext.tsx"
   ]
 }

@@ -9,7 +9,7 @@ import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-import { TransactionContext } from '../context/TransactionContext';
+import { useTransactionContext } from '../context/TransactionContext';
 
 type Item = {
   symbol: string;
@@ -31,7 +31,7 @@ const Index = () => {
   const [buyTokenNum, setBuyTokenNum] = React.useState<number>();
   const [sellAmount, setSellAmount] = React.useState<number>(0);
   const [buyAmount, setBuyAmount] = React.useState<number>(0);
-  const { currentAccount } = React.useContext<any>(TransactionContext);
+  const { currentAccount } = useTransactionContext();
 
   const handleSellTokenBalance = async () => {
     if (sellToken && buyToken && currentAccount) {
