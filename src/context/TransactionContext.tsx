@@ -11,7 +11,7 @@ interface TransactionContextProps {
   balance: string;
   setBalance: React.Dispatch<string>;
   setCurrentNetwork: React.Dispatch<any>;
-  currentNetwork: string | undefined;
+  currentNetwork: any;
 }
 
 type Props = {
@@ -27,7 +27,7 @@ const TransactionContextDefaultValue: TransactionContextProps = {
   balance: '0',
   setBalance: () => {},
   setCurrentNetwork: () => {},
-  currentNetwork: '',
+  currentNetwork: {},
 };
 
 const TransactionContext = createContext<TransactionContextProps>(
@@ -43,7 +43,7 @@ export const TransactionProvider = ({ children }: Props) => {
   const [isConnected, setIsConnected] = useState<string>();
   const [balance, setBalance] = useState('0');
   const [provider, setProvider] = useState(null);
-  const [currentNetwork, setCurrentNetwork] = useState();
+  const [currentNetwork, setCurrentNetwork] = useState<any>();
 
   const getBalance = async () => {
     if (isConnected === 'connected') {
