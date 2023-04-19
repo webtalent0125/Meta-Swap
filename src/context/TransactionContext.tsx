@@ -101,9 +101,12 @@ export const TransactionProvider = ({ children }: Props) => {
 
   useEffect(() => {
     getProvider();
-    window.ethereum.on('chainChanged', () => {
-      getProvider();
-    });
+    const metamask = window.ethereum;
+    if (metamask) {
+      window.ethereum.on('chainChanged', () => {
+        getProvider();
+      });
+    }
   }, []);
 
   useEffect(() => {
